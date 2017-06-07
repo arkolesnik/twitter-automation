@@ -1,1 +1,1 @@
-# jukin-tasks
+# Automation for Twitter - API and functional UI tests
