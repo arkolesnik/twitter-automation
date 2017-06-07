@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium test for Twitter" parallel="false">
+    <test name="Verify basic Twitter functionality" preserve-order="true">
+        <classes>
+            <class name="SeleniumTest"/>
+            <methods>
+                <include name="login">
+                    <parameter name="username" value="testacc494@gmail.com"/>
+                    <parameter name="password" value="Testpass123"/>
+                </include>
+                <include name="addDeleteTweet">
+                    <parameter name="text" value="NewTweet"/>
+                </include>
+                <include name="duplicateTweet">
+                    <parameter name="text" value="DuplicateTweet"/>
+                </include>
+                <include name="checkTweet">
+                    <parameter name="creationDate" value="7:28 PM - 7 Jun 2017"/>
+                    <parameter name="text" value="MainTweet"/>
+                    <parameter name="retweetNumber" value="0"/>
+                </include>
+            </methods>
+        </classes>
+    </test>
+</suite>
